@@ -1,0 +1,133 @@
+body *{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.top-days{
+    width: 100%;
+}
+.main-days{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.title-days{
+    width: 100%;
+    padding:10px;
+}
+.title-days h2{
+    font-size: 19px;
+    font-weight: bold;
+}
+.each-day{
+    width: 30.3%;
+    border:1px solid yellow;
+}
+.top-each{
+    overflow: hidden;
+}
+.top-each img{
+    width: 100%;
+    height: auto;
+    transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in;
+}
+.top-each:hover img{
+    transform: scale(1.2);
+}
+.bottom-each h1{
+    padding: 10px 0;
+    margin: 0;
+    font-size: 18px;
+}
+.bottom-each p{
+    margin: 0;
+    font-size: 14px;
+}
+
+.main-stage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+   
+    
+}
+.left-stage{
+    width: 70%;
+    height: 100%;
+    /* padding: 0 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    border:1px solid rgb(38, 206, 80);
+}
+.title-stage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.subtitle-stage{
+    width: 50%;
+}
+.middle-stage{
+}
+.middle-stage video{
+    width: 100%;
+    height: auto;
+   
+}
+video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-stage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.each-stage{
+    width: 31%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.each-stage video{
+   width: 100%;
+   height: auto;
+   transform-origin: 0 0;
+   transition: transform .25s, visibility .25s ease-in;
+}
+.each-stage:hover video{
+    transform: scale(1.2);
+}
+.right-stage{
+    width: 30%;
+}
+
+
+video::-webkit-media-controls {
+    display: block;
+  }
+  
+  /* Could Use thise as well for Individual Controls */
+  video::-webkit-media-controls-play-button {}
+  
+  video::-webkit-media-controls-volume-slider {}
+  
+  video::-webkit-media-controls-mute-button {}
+  
+  video::-webkit-media-controls-timeline {}
+  
+  video::-webkit-media-controls-current-time-display {}

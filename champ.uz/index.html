@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <main class="container">
+       <div class="top-days">
+
+               <div class="row">
+                   <div class="main-days">
+                       <section class="title-days">
+                           <h2>топ дня</h2>
+                       </section>
+                       <div class="each-day">
+                           <section class="top-each">
+                               <img src="img/1.jpeg" alt="">
+                           </section>
+                           <section class="bottom-each">
+                               <h1>Lorem ipsum dolor sit, amet consm cvwbebcnewbcwmnbc bcsdc sdc sdcsnbcs csncs cscs !</h1>
+                               <p>Lorem ipsum dolor sit amet consectetur dolor fuga consectetur labore.</p>
+                               <span>12 июня 13:45</span>
+                           </section>
+                       </div>
+                       <div class="each-day">
+                        <section class="top-each">
+                            <img src="img/Прямоугольник 5.png" alt="">
+                        </section>
+                        <section class="bottom-each">
+                                <h1>Lorem ipsum dolor sit, amet consm cvwbebcnewbcwmnbc bcsdc sdc sdcsnbcs csncs cscs !</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur dolor fuga consectetur labore.</p>
+                                <span>12 июня 13:45</span>
+                        </section>
+                    </div>
+                    <div class="each-day">
+                        <section class="top-each">
+                            <img src="img/Прямоугольник 5.png" alt="">
+                        </section>
+                        <section class="bottom-each">
+                                <h1>Lorem ipsum dolor sit, amet consm cvwbebcnewbcwmnbc bcsdc sdc sdcsnbcs csncs cscs !</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur dolor fuga consectetur labore.</p>
+                                <span>12 июня 13:45</span>
+                        </section>
+                    </div>
+                       
+                   </div>
+               </div>  
+       </div>
+
+       <div class="second-stage">
+
+               <div class="main-stage">
+                   <div class="left-stage">
+                       <section class="title-stage">
+                           <section class="subtitle-stage"><h3>топ дня</h3></section>
+                           <section class="subtitle-stage"><h3>все видео</h3></section>
+                       </section>
+                       <section class="middle-stage">
+                            <button><i class="fas fa-play-circle"></i></button>
+                           <video controls="false"  >
+                                
+                        <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+                           
+                    Your browser doesn't support HTML5 video tag.
+                        </video>
+                       </section>
+                       <section class="bottom-stage">
+                           <section class="each-stage">
+                            <video controls="false"  >
+                                <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+                            Your browser doesn't support HTML5 video tag.
+                          </video>
+                         </section>
+                         <section class="each-stage">
+                                <video controls="false">
+                                    <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+                                Your browser doesn't support HTML5 video tag.
+                              </video>
+                             </section>
+                             <section class="each-stage">
+                                    <video controls="false" >
+                                        <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+                                    Your browser doesn't support HTML5 video tag.
+                                  </video>
+                                 </section>
+                       </section>
+                   </div>
+                   <div class="right-stage"></div>
+               </div>
+ 
+           
+       </div>
+   </main>
+    
+
+
+
+
+</body>
+<script>
+       //For Firefox we have to handle it in JavaScript 
+var vids = $("video"); 
+$.each(vids, function(){
+       this.controls = false; 
+}); 
+//Loop though all Video tags and set Controls as false
+
+$("video").click(function() {
+  //console.log(this); 
+  if (this.paused) {
+    this.play();
+  } else {
+    this.pause();
+  }
+});
+</script>
+</html>
